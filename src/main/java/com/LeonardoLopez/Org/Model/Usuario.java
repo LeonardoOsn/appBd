@@ -29,7 +29,7 @@ public class Usuario  {
 	private LocalDate fechaRegistro;
 	
 	@ManyToMany(fetch=FetchType.EAGER)
-	@JoinTable(name="usuarioperfil",
+	@JoinTable(name="UsuarioPerfil",
 			joinColumns = @JoinColumn(name="idUsuario"),
 			inverseJoinColumns = @JoinColumn(name="idPerfil")
 	)
